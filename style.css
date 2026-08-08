@@ -96,15 +96,72 @@ footer {
     padding: 30px;
 }
 
+/* Hide mobile menu button on desktop */
+
+.menu-toggle {
+    display: none;
+}
+
 /* =========================
-   MOBILE
+MOBILE
 ========================= */
 
 @media (max-width: 768px) {
 
+    /* Mobile Menu Button */
+
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+
+    /* Mobile Navigation */
+
     .nav-links {
         display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0;
+
+        padding: 15px 0;
+
+        background: rgba(11, 15, 20, 0.97);
+
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+        backdrop-filter: blur(12px);
     }
+
+
+    /* Show Navigation */
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+    /* Navigation Links */
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 14px 10px;
+    }
+
 
     section {
         padding: 80px 20px;
@@ -119,23 +176,23 @@ footer {
     }
 
     .hero-title {
-    font-size: 22px !important;
+        font-size: 22px !important;
+    }
+
+    .hero-description {
+        font-size: 16px !important;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .hero-btn {
+        text-align: center;
+    }
+
 }
 
-.hero-description {
-    font-size: 16px !important;
-}
-
-.hero-buttons {
-    width: 100%;
-}
-
-.hero-btn {
-    text-align: center;
-}
-
-
-}
 
 /* =========================
    NAVBAR UPGRADE
