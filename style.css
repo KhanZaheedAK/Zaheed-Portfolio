@@ -811,7 +811,7 @@ header {
     padding: 20px;
 }
 
-.certificate-info span {
+.certificate-info h3 {
     color: #4da6ff;
 
     font-size: 12px;
@@ -821,7 +821,7 @@ header {
     letter-spacing: 1px;
 }
 
-.certificate-info h3 {
+.certificate-info span {
     font-size: 20px;
 
     margin: 8px 0;
