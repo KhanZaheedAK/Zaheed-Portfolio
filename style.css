@@ -2091,3 +2091,75 @@ footer {
     opacity: 1;
     transform: translateX(4px);
 }
+
+/* =========================
+   PROJECT GITHUB BUTTON
+========================= */
+
+.project-view-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.project-view-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px 24px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.project-view-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   PROJECT MODAL POLISH
+========================= */
+
+.project-modal-content {
+    border-radius: 18px;
+    padding: 30px;
+    max-width: 650px;
+}
+
+.modal-project-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.project-modal-content h2 {
+    margin-bottom: 25px;
+}
+
+.project-detail-section {
+    margin-bottom: 18px;
+}
+
+.project-detail-section h3 {
+    margin-bottom: 6px;
+}
+
+.project-detail-section p {
+    line-height: 1.7;
+}
+
+.project-modal-close {
+    transition: transform 0.25s ease;
+}
+
+.project-modal-close:hover {
+    transform: rotate(90deg);
+}
