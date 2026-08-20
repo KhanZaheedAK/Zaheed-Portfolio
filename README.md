@@ -22,7 +22,7 @@ I am an **Automation & Robotics Engineering student** interested in robotics, el
 ## 🛠️ Technologies
 
 - HTML5
-- CSS3
+- CSS
 - JavaScript
 
 ## 🚀 Featured Project
