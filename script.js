@@ -322,7 +322,17 @@ const roboticsProjectData = {
         components: "Breadboard, jumper cables, buzzer, and solar panel.",
         working: "The solar panel converts sunlight into electrical energy to power the circuit. The buzzer produces an audible alert when the circuit is activated.",
         result: "Successfully created a solar-powered alarm."
-    }
+    },
+
+    "birthday-celebration": {
+        title: "Birthday Celebration",
+        icon: "🎉",
+        aim: "To create an interactive birthday celebration setup using an ESP8266.",
+        components: "ESP8266 NodeMCU, Breadboard, Jumper Wires, LEDs, Multicolor LED, Passive Buzzer Module, 1kΩ Resistors, and Power Supply.",
+        working: "The ESP8266 controls the LEDs and passive buzzer to create an interactive birthday-themed light and sound display.",
+        result: "Successfully designed and built an interactive birthday celebration setup using ESP8266.",
+        view: "https://github.com/KhanZaheedAK/Birthday_Project"
+},
 
 };
 
@@ -354,6 +364,9 @@ const modalProjectWorking =
 
 const modalProjectResult =
     document.getElementById("modalProjectResult");
+
+const modalProjectView =
+    document.getElementById("modalProjectView");    
 
 
 // =========================
@@ -392,6 +405,13 @@ projectCards.forEach(function (card) {
 
         modalProjectResult.textContent =
             project.result;
+
+        if (project.view) {
+             modalProjectView.href = project.view;
+            modalProjectView.style.display = "inline-block";
+        } else {
+                modalProjectView.style.display = "none";
+                }    
 
         projectModal.style.display =
             "flex";
