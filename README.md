@@ -31,7 +31,7 @@ I am an **Automation & Robotics Engineering student** interested in robotics, el
 
 An interactive friendship website created using HTML, CSS, and JavaScript.
 
-🔗 [View Project](https://khanzaheedak.github.io/operation-friendship/)
+🔗 [View Project](https://khanzaheedak.github.io/Zaheed-Portfolio/)
 
 ## 🤖 Robotics & Electronics
 
